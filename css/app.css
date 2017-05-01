@@ -249,9 +249,6 @@ a.button.hvr-icon-forward {
   padding-top: 1rem;
 }
 
-.callout > :last-child {
-  margin-bottom: -55px;
-}
 
 .tools {
   color: #ffffff;
@@ -530,7 +527,7 @@ a.button.hvr-icon-forward {
   transform: rotate(180deg);
   max-height: 6rem;
   z-index: -100;
-  margin-bottom: -100px;
+  margin-bottom: -55px;
 }
 
 .orange-arrow {
