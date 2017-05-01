@@ -46,7 +46,6 @@ body {
       #009CDE, #9BCB58
     );
   height: 45rem;
-  /*text-align: center;*/
   color: #FFFFFF;
   -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 80%, 0 100%);
   clip-path: polygon(0 0, 1600px 0, 1600px 80%, 0 100%);
@@ -167,7 +166,6 @@ a.button.hvr-icon-forward {
           justify-content: space-between;
 }
 
-
 .laptop {
   height: 50%;
   background: linear-gradient(to bottom, transparent 80%, #ECEDF0 20%);
@@ -180,15 +178,6 @@ a.button.hvr-icon-forward {
 .laptop-title h1.number{
   border: 1px solid #9BCB58;
 }
-
-/*.laptop-title h1 {
-  font-size: 45px;
-}*/
-
-/*.laptop-title h1.groups-top,
-.laptop-title h1.groups-bottom {
-  background: linear-gradient(to bottom, transparent 40%, #C0E391 43%);
-}*/
 
 @media screen and (max-width: 39.9375em) {
   .laptop-title h1.number{
@@ -275,15 +264,11 @@ a.button.hvr-icon-forward {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  /*font-size: 34px;
-  margin-bottom: 0px;*/
-  /*padding: 0px 15px*/
 }
 
 .bold-tools {
   font-weight: bold;
   margin: 0;
-  /*padding: 0px 15px 0px 27px;*/
 }
 
 .contribution,
@@ -536,8 +521,6 @@ a.button.hvr-icon-forward {
     text-align: center;
   }
 }
-
-
 
 /*Arrow Section*/
 .grayscale-arrow-down {
