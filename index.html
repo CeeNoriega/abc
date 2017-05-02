@@ -14,7 +14,12 @@
 
   <body>
     <div class="row top-section">
-      <div class="top-bar">
+      <div class="title-bar" data-responsive-toggle="top-bar" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle="top-bar"></button>
+      <!-- <div class="title-bar-title">Menu</div> -->
+    </div>
+
+      <div class="top-bar" id="top-bar">
         <div class="top-bar-title">
           <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
           </span>
@@ -130,12 +135,12 @@
         </div>
       </div>
     </div>
-    <div class="row express flexbox-container">
-      <div class="large-5 large-offset-1 medium-5 medium-offset-1 small-12 columns left">
+    <div class="row data-equalizer express flexbox-container">
+      <div class="large-6 small-12 columns panel left">
         <img src="images/charities-ipad-express.svg" />
       </div>
-      <div class="large-5 medium-5 small-12 columns right">
-        <div class="right-section">
+      <div class="right">
+        <div class="large-6 small-12 columns panel right-section">
           <div class="header">
             <div class="top">
               <h2>ActBlue Express:</h2>

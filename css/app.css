@@ -40,16 +40,26 @@ body {
 }
 
 .top-section {
-  background-image:
-    linear-gradient(
-      to right,
-      #009CDE, #9BCB58
-    );
+  background: url('../images/hero-photo.png') no-repeat center, linear-gradient(to right, #009CDE, #9BCB58);
+  background-size: cover;
   height: 45rem;
   color: #FFFFFF;
   -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 80%, 0 100%);
   clip-path: polygon(0 0, 1600px 0, 1600px 80%, 0 100%);
 }
+
+
+/*.top-section::after {
+  display: block;
+  position: relative;
+  background-image: linear-gradient(to right, #009CDE, #9BCB58);
+  /*margin-top: -150px;*/
+  /*height: 100%;
+  width: 100%;
+  content: '';
+  opacity: .4;
+  z-index: 0;
+}*/
 
 .callout {
   border: none;
@@ -106,7 +116,7 @@ a.button.hvr-icon-forward {
   /*height: 31.25rem;*/
   /*position: relative;*/
 
-  @media screen and (min-width: 40em) {
+  /*@media screen and (min-width: 40em) {
     .large-laptop-header {
       /*background-position: center center;*/
     }
@@ -341,11 +351,15 @@ a.button.hvr-icon-forward {
 }
 
 .left img {
-  max-width: 80%;
+  max-width: 90%;
   max-height: 100%;
   box-shadow: 7px 7px 5px #C9CDD4;
   border-radius: 50px;
   position: relative;
+}
+
+.left {
+  padding-left: 4rem;
 }
 
 .right h2 {
@@ -356,6 +370,12 @@ a.button.hvr-icon-forward {
   text-transform: uppercase;
 }
 
+.right-section {
+  padding-right: 13rem;
+  padding-top: 9rem;
+  color: #666666;
+}
+
 
 .right .header .top,
 .right .header .middle,
@@ -363,11 +383,11 @@ a.button.hvr-icon-forward {
   background: linear-gradient(to bottom, transparent 52%, #fceec7 38%);
 }
 
-.right {
+/*.right {
   padding-right: 4rem;
   margin-right: 5rem;
   color: #666666;
-}
+}*/
 
 @media screen and (max-width: 39.9375em) {
   .column:last-child:not(:first-child), .columns:last-child:not(:first-child){
@@ -404,16 +424,27 @@ a.button.hvr-icon-forward {
 }
 
 .bottom-pink {
-  background-image:
-    linear-gradient(
-      to right,
-      #4ca2cd, #ff0066
-    );
+  background:
+    url('../images/ready-to-get-started-photo.png') no-repeat center;
+  background-size: cover;
   height: 29rem;
   -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 55%, 0 100%);
   clip-path: polygon(0 0, 1600px 0, 1600px 55%, 0 100%);
   margin-bottom: -4rem;
 }
+
+.bottom-pink::before {
+  display: block;
+  position: relative;
+  background-image: linear-gradient( to right, #4ca2cd, #ff0066);
+  /*margin-top: -150px;*/
+  height: 100%;
+  width: 100%;
+  content: '';
+  opacity: .4;
+  z-index: 0;
+}
+
 
 .bottom-section{
   text-align: center;
@@ -443,7 +474,7 @@ a.button.hvr-icon-forward {
 
 .text-bottom {
   padding: 0 15rem 0 15rem;
-  max-width: 83rem;
+  /*max-width: 83rem;*/
 }
 
 @media screen and (max-width: 39.9375em) {
@@ -569,7 +600,15 @@ a.button.hvr-icon-forward {
 @media screen and (max-width: 39.9375em) {
   .column, .columns{
     float: none;
-    margin-left: 2rem;
+    /*margin-left: 2rem;*/
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+  .right-section {
+    padding-right: 1rem;
+    padding-top: 6rem;
+    padding-left: 2rem;
   }
 }
 
@@ -579,9 +618,9 @@ a.button.hvr-icon-forward {
   .button.large {
     font-size: .75rem;
   }
-  .bottom-pink{
+  /*.bottom-pink{
     height: 8rem;
-  }
+  }*/
 
   .bottom-section{
     margin-left: 0;
@@ -642,7 +681,7 @@ a.button.hvr-icon-forward {
 }
 
 .orange-arrow {
-  background-color: #ECEDF0;
+  background-color: #f8f9fa;
 }
 
 
@@ -656,6 +695,10 @@ a.button.hvr-icon-forward {
 @media screen and (max-width: 39.9375em) {
   .orange-arrow img {
     margin-left: 0;
+  }
+
+  .grayscale-arrow-down {
+    max-height: 7rem;
   }
 }
 
