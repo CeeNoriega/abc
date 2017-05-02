@@ -572,7 +572,7 @@ a.button.hvr-icon-forward {
   }
 }
 
-@media only screen and (min-width: 40.063em) {
+@media screen and (max-width: 39.9375em) {
   .bottom-section .header{
     max-width: 70%;
   }
@@ -585,12 +585,9 @@ a.button.hvr-icon-forward {
   }
 
   h1{
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
-  /* min-width 641px, medium screens */
-
-
 
 /*Arrow Section*/
 .grayscale-arrow-down {
