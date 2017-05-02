@@ -155,8 +155,8 @@ a.button.hvr-icon-forward {
   margin: auto;
 }
 
-.laptop-title h1.groups-1,
-.laptop-title h1.groups-2 {
+.laptop-title-hero h1.groups-1,
+.laptop-title-hero h1.groups-2 {
   background: linear-gradient(to bottom, transparent 50%, #C0E391 15%);
   /*max-width: 66%;*/
   margin: auto;
