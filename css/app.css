@@ -338,11 +338,24 @@ a.button.hvr-icon-forward {
 @media screen and (max-width: 39.9375em) {
   .column:last-child:not(:first-child), .columns:last-child:not(:first-child){
     float: none;
+    margin: auto;
+    /*padding: 3rem;*/
   }
   .right .header .top,
   .right .header .middle,
   .right .header .bottom{
     background: none;
+  }
+  .callout.large h1.sub-banner {
+    padding-left: 0;
+    padding-top: 0;
+  }
+  .menu button {
+    font-size: .75rem;
+  }
+  a.button.hvr-icon-forward{
+    font-size: 14px;
+    width: 80%;
   }
 }
 
@@ -519,6 +532,66 @@ a.button.hvr-icon-forward {
   }
 }
 
+@media screen and (max-width: 39.9375em) {
+  .column, .columns{
+    float: none;
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+  .large-12.columns.text,
+  .right-section p,
+  .button.large {
+    font-size: .75rem;
+  }
+  .bottom-pink{
+    height: 8rem;
+  }
+
+  .bottom-section{
+    margin-left: 0;
+  }
+
+  .bottom-section .button {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  .bottom-section .header{
+    width: 75%;
+}
+
+  .bottom-arrow {
+    visibility: hidden;
+    height: 0;
+  }
+
+  .fee-header img{
+    max-width: 70%;
+  }
+}
+
+@media only screen and (min-width: 40.063em) {
+  .bottom-section .header{
+    max-width: 70%;
+  }
+  .medium-5 {
+    float: none;
+    width: 100%;
+  }
+  .large-5.medium-5.small-12.columns.right {
+    float: none;
+  }
+
+  h1{
+    font-size: 2rem;
+  }
+}
+  /* min-width 641px, medium screens */
+
+
+
 /*Arrow Section*/
 .grayscale-arrow-down {
   -webkit-filter: grayscale(100%);
@@ -534,11 +607,18 @@ a.button.hvr-icon-forward {
   background-color: #ECEDF0;
 }
 
+
 .orange-arrow img {
   margin-top: 3rem;
   max-height: 7rem;
   margin-left: 18rem;
   margin-bottom: -5px;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .orange-arrow img {
+    margin-left: 0;
+  }
 }
 
 .grayscale-arrow-up{
