@@ -8,7 +8,7 @@ body {
 }
 
 .top-bar-title {
-  padding: 1.5rem 0rem 1.5rem 1rem;
+  /*padding: 1.5rem 0rem 1.5rem 1rem;*/
 }
 
 .top-bar-title img {
@@ -92,19 +92,32 @@ a.button.hvr-icon-forward {
 }
 
 
-.large-laptop-header {
-  background: url('../images/charities_laptop.svg') no-repeat center;
-  height: 31.25rem;
-  position: relative;
+.large-laptop-header-hero {
+  background: url('../images/charities_laptop.svg') no-repeat center center;
+  min-height: 33rem;
+  background-size: contain;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+  /*height: 31.25rem;*/
+  /*position: relative;*/
+
+  @media screen and (min-width: 40em) {
+    .large-laptop-header {
+      /*background-position: center center;*/
+    }
 
 @media screen and (max-width: 39.9375em) {
-  .large-laptop-header {
+  .large-laptop-header-hero {
     height: 20.83333rem;
   }
 }
 
-.large-laptop-header-content {
+/*.large-laptop-header-content {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -116,31 +129,37 @@ a.button.hvr-icon-forward {
   left: 0;
   right: 0;
   text-align: center;
-}
+}*/
 
-@media screen and (max-width: 39.9375em) {
+/*@media screen and (max-width: 39.9375em) {
   .large-laptop-header-content {
     bottom: 1.25rem;
   }
-}
+}*/
 
-.large-laptop-header-content .center-container {
-  width: 50%;
+/*.large-laptop-header-content .center-container {
+  width: 65%;
   margin: 0 auto;
-}
+  max-height: 287px;
+}*/
 
-@media screen and (max-width: 39.9375em) {
+/*@media screen and (max-width: 39.9375em) {
   .large-laptop-header-content .center-container {
     width: 100%;
     padding: 0 1.25rem;
   }
-}
+}*/
 
 .large-laptop-header-content {
   color: #9BCB58;
   line-height: 3.125rem;
   font-weight: 900;
   text-transform: uppercase;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
 }
 
 .large-laptop-header-content h1, .large-laptop-header-content h2 {
@@ -168,16 +187,27 @@ a.button.hvr-icon-forward {
 
 .laptop {
   height: 50%;
-  background: linear-gradient(to bottom, transparent 80%, #ECEDF0 20%);
+  background: linear-gradient(to bottom, transparent 80%, #f8f9fa 20%);
 }
 
 .laptop-title {
   color: #9BCB58;
+  min-width: 75%;
+  margin: auto;
 }
 
+.laptop-title h1.groups-1,
+.laptop-title h1.groups-2 {
+  background: linear-gradient(to bottom, transparent 50%, #C0E391 15%);
+  /*max-width: 66%;*/
+  margin: auto;
+  line-height: 1.3;
+}
+/*
 .laptop-title h1.number{
   border: 1px solid #9BCB58;
-}
+  margin-top: 1rem;
+}*/
 
 @media screen and (max-width: 39.9375em) {
   .laptop-title h1.number{
@@ -192,7 +222,7 @@ a.button.hvr-icon-forward {
 .fee-header {
   border: none;
   text-align: center;
-  background-color: #ECEDF0;
+  background-color:  #f8f9fa;
   color: #666666;
   padding-top: 8rem;
   margin-bottom: none;
@@ -217,7 +247,7 @@ a.button.hvr-icon-forward {
 
 .callout.sub-header, .callout.sub-tag {
   text-align: center;
-  background-color: #ECEDF0;
+  background-color:  #f8f9fa;
   color: #666666;
   border: none;
   width: 75%;
@@ -225,7 +255,7 @@ a.button.hvr-icon-forward {
 }
 
 .fee-section {
-  background-color: #ECEDF0;
+  background-color:  #f8f9fa;
 }
 
 .first-mid-section, .second-mid-section {
@@ -252,7 +282,7 @@ a.button.hvr-icon-forward {
 
 .tools {
   color: #ffffff;
-  background-color: #6fdb3d;
+  background-color: #9BCB58;
   /*padding: 10px;*/
   /*padding: 0px 15px 0px 27px*/
 }
@@ -281,6 +311,10 @@ a.button.hvr-icon-forward {
   color: #666666;
 }
 
+.first-mid-section .second-mid-section{
+  padding: 1rem 2rem 1rem 3rem;
+}
+
 .contribution h3 {
   color: #70B2E3;
 }
@@ -294,7 +328,7 @@ a.button.hvr-icon-forward {
 }
 
 .training h3 {
-  color: #6fdb3d;
+  color: #9BCB58;
 }
 
 .integrations h3 {
@@ -302,7 +336,7 @@ a.button.hvr-icon-forward {
 }
 
 .express{
-  background-color: #ECEDF0;
+  background-color: #f8f9fa;
   padding-top: 7rem;
 }
 
@@ -326,7 +360,7 @@ a.button.hvr-icon-forward {
 .right .header .top,
 .right .header .middle,
 .right .header .bottom {
-  background: linear-gradient(to bottom, transparent 52%, #FFE8AE 38%);
+  background: linear-gradient(to bottom, transparent 52%, #fceec7 38%);
 }
 
 .right {
@@ -339,8 +373,8 @@ a.button.hvr-icon-forward {
   .column:last-child:not(:first-child), .columns:last-child:not(:first-child){
     float: none;
     margin: auto;
-    /*padding: 3rem;*/
   }
+
   .right .header .top,
   .right .header .middle,
   .right .header .bottom{
@@ -569,6 +603,13 @@ a.button.hvr-icon-forward {
 
   .fee-header img{
     max-width: 70%;
+  }
+  .large-laptop-header-content h1, .large-laptop-header-content h2{
+    font-size: 1.5rem;
+  }
+
+  .callout.large h1{
+    font-size: 2rem;
   }
 }
 
