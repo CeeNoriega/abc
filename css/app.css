@@ -333,6 +333,10 @@ a.button.hvr-icon-forward {
   position: relative;
 }
 
+#tablet {
+  opacity: 0;
+}
+
 .left {
   padding-left: 4rem;
 }
@@ -419,18 +423,6 @@ a.button.hvr-icon-forward {
   -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 55%, 0 100%);
   clip-path: polygon(0 0, 1600px 0, 1600px 55%, 0 100%);
   margin-bottom: -4rem;
-}
-
-.bottom-pink::before {
-  display: block;
-  position: relative;
-  background-image: linear-gradient( to right, #4ca2cd, #ff0066);
-  /*margin-top: -150px;*/
-  height: 100%;
-  width: 100%;
-  content: '';
-  opacity: .4;
-  z-index: 0;
 }
 
 .bottom-section {
