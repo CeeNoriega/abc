@@ -40,13 +40,23 @@ body {
   max-width: 100%;
 }
 
-.top-section {
-  background: url('../images/hero-photo.png') no-repeat center;
-  background-size: cover;
-  height: 45rem;
-  color: #FFFFFF;
-  /*-webkit-clip-path: polygon(0 0, 1600px 0, 1600px 80%, 0 100%);
-  clip-path: polygon(0 0, 1600px 0, 1600px 80%, 0 100%);*/
+@media only screen and (max-width: 1440px) {
+  .top-section {
+    background: url('../images/hero-photo.png') no-repeat center;
+    background-size: cover;
+    height: 45rem;
+    color: #FFFFFF;
+    -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 80%, 0 100%);
+    clip-path: polygon(0 0, 1600px 0, 1600px 80%, 0 100%);
+  }
+}
+@media only screen and (min-width: 1441px){
+  .top-section {
+    background: url('../images/hero-photo.png') no-repeat center;
+    background-size: cover;
+    height: 45rem;
+    color: #FFFFFF;
+  }
 }
 
 .callout {
@@ -420,14 +430,26 @@ a.button.hvr-icon-forward {
   text-transform: uppercase;
 }
 
-.bottom-pink {
-  background:
-    url('../images/ready-to-get-started-photo.png') no-repeat center;
-  background-size: cover;
-  height: 29rem;
-  -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 55%, 0 100%);
-  clip-path: polygon(0 0, 1600px 0, 1600px 55%, 0 100%);
-  margin-bottom: -4rem;
+@media only screen and (max-width: 1440px) {
+  .bottom-pink {
+    background:
+      url('../images/ready-to-get-started-photo.png') no-repeat center;
+    background-size: cover;
+    height: 29rem;
+    -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 55%, 0 100%);
+    clip-path: polygon(0 0, 1600px 0, 1600px 55%, 0 100%);
+    margin-bottom: -4rem;
+  }
+}
+
+@media only screen and (min-width: 1441px){
+  .bottom-pink {
+    background:
+      url('../images/ready-to-get-started-photo.png') no-repeat center;
+    background-size: cover;
+    height: 29rem;
+    margin-bottom: -4rem;
+  }
 }
 
 .bottom-section {
