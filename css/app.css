@@ -222,6 +222,12 @@ a.button.hvr-icon-forward {
   margin: auto;
 }
 
+@media screen and (max-width: 39.9375em) {
+  .callout.sub-header, .callout.sub-tag {
+    width: 100%;
+  }
+}
+
 .fee-section {
   background-color:  #f8f9fa;
 }
