@@ -36,12 +36,12 @@ body {
 }
 
 .top-section {
-  background: url('../images/hero-photo.png') no-repeat center, linear-gradient(to right, #009CDE, #9BCB58);
+  background: url('../images/hero-photo.png') no-repeat center;
   background-size: cover;
   height: 45rem;
   color: #FFFFFF;
-  -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 80%, 0 100%);
-  clip-path: polygon(0 0, 1600px 0, 1600px 80%, 0 100%);
+  /*-webkit-clip-path: polygon(0 0, 1600px 0, 1600px 80%, 0 100%);
+  clip-path: polygon(0 0, 1600px 0, 1600px 80%, 0 100%);*/
 }
 
 .callout {
@@ -73,14 +73,14 @@ body {
     to right,
     rgba(58, 219, 118, 0.33), #9BCB58
   );
-  width: 87%;
+  max-width: 87%;
   padding-left: 1rem;
   padding-top: .5rem;
 }
 
 a.button.hvr-icon-forward {
   background-color: #9BCB58;
-  font-size: 19px;
+  /*font-size: 19px;*/
 }
 
 .large-laptop-header-hero {
@@ -617,14 +617,32 @@ a.button.hvr-icon-forward {
     height: 0;
   }
 
-  .fee-header img {
-    max-width: 70%;
+  .fee-header {
+    padding-top: .25rem;
   }
 
   .callout.large h1 {
     font-size: 2rem;
   }
 }
+
+.image2 {
+  display: none;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .image1 {
+    display: none;
+  }
+
+  .image2 {
+    display: block;
+    margin: auto;
+
+  }
+}
+
+
 
 /*Arrow Section*/
 .grayscale-arrow-down {
