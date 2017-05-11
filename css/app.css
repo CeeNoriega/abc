@@ -481,7 +481,7 @@ a.button.hvr-icon-forward {
     background:
       url('../images/ready-to-get-started-photo.png') no-repeat center;
     background-size: cover;
-    height: 29rem;
+    height: 43rem;
     -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 55%, 0 100%);
     clip-path: polygon(0 0, 1600px 0, 1600px 55%, 0 100%);
     margin-bottom: -4rem;
@@ -676,11 +676,17 @@ a.button.hvr-icon-forward {
     text-align: center;
   }
 
-  #learn-more.button, #sign-up-today.button, #set-up-today.button{
+  #learn-more.button, #sign-up-today.button{
+    display: block;
+    width: 80%;
+    margin: auto;
+  }
+
+  #set-up-today.button {
     display: block;
     width: 100%;
-    margin-right: 0;
     margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -692,10 +698,6 @@ a.button.hvr-icon-forward {
   .bottom-section .button {
     margin-bottom: 0;
   }
-
-  .bottom-section .header {
-    /*width: 75%;*/
-}
 
   .bottom-arrow {
     visibility: hidden;
