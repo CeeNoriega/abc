@@ -26,15 +26,25 @@ body {
 }
 .menu button {
   margin: .5rem;
-  background-color: #009CDE;
   font-family: 'Raleway', sans-serif;
   font-weight: 900;
   text-transform: uppercase;
 }
 
-.menu button.log-in{
+#sign-up {
+  background-color: #009CDE;
+}
+  #sign-up:hover, #sign-up:focus {
+    background-color:  #3b4a91;
+  }
+
+#log-in{
   background-color: #9BCB58;
 }
+
+  #log-in:hover, #log-in:focus {
+    background-color: #c0e391;
+    color: #9bcb58; }
 
 .row {
   max-width: 100%;
@@ -48,6 +58,8 @@ body {
     color: #FFFFFF;
     -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 80%, 0 100%);
     clip-path: polygon(0 0, 1600px 0, 1600px 80%, 0 100%);
+    position: relative;
+    z-index: 0;
   }
 }
 @media only screen and (min-width: 1441px){
@@ -56,6 +68,7 @@ body {
     background-size: cover;
     height: 45rem;
     color: #FFFFFF;
+    z-index: 0;
   }
 }
 
@@ -76,6 +89,7 @@ body {
 
 .callout.large > :last-child {
   margin-top: 4rem;
+  margin-bottom: 7rem;
 }
 
 .callout.large h1 {
@@ -100,7 +114,10 @@ a.button.hvr-icon-forward {
 
 .large-laptop-header-hero {
   background: url('../images/charities_laptop.svg') no-repeat center center;
+  position: relative;
+  z-index: 3;
   min-height: 33rem;
+  margin-top: -10rem;
   background-size: contain;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -114,6 +131,8 @@ a.button.hvr-icon-forward {
 @media screen and (max-width: 39.9375em) {
   .large-laptop-header-hero {
     height: 20.83333rem;
+    margin: auto;
+    background-color: #f8f9fa;
   }
 }
 
@@ -156,6 +175,7 @@ a.button.hvr-icon-forward {
 .laptop {
   height: 50%;
   background: linear-gradient(to bottom, transparent 80%, #f8f9fa 20%);
+  z-index: 0;
 }
 
 .laptop-title {
@@ -226,6 +246,18 @@ a.button.hvr-icon-forward {
   .callout.sub-header, .callout.sub-tag {
     width: 100%;
   }
+
+  .callout.large {
+    text-align: center;
+  }
+
+  .top-bar {
+    padding: 1rem 0rem 0rem 1rem;
+  }
+
+  .first-mid-section {
+    margin: 0 !important;
+  }
 }
 
 .fee-section {
@@ -255,6 +287,12 @@ a.button.hvr-icon-forward {
   padding-top: 1rem;
 }
 
+.second-mid-section {
+  position: relative;
+  z-index: 0;
+  /*-webkit-clip-path: polygon(0 0, 1600px 0, 1600px 55%, 0 100%);
+  clip-path: polygon(0 0, 1600px 0, 1600px 55%, 0 100%);*/
+}
 
 .tools {
   color: #ffffff;
@@ -344,18 +382,24 @@ a.button.hvr-icon-forward {
 .express{
   background-color: #f8f9fa;
   padding-top: 7rem;
+  position: relative;
+  z-index: 0;
+  /*-webkit-clip-path: polygon(44% 27%, 100% 0%, 100% 100%, 0 54%);
+  clip-path: polygon(44% 27%, 100% 0%, 100% 100%, 0 54%);*/
 }
 
 .left img {
   max-width: 90%;
   max-height: 100%;
-  box-shadow: 7px 7px 5px #C9CDD4;
+  box-shadow: 1px 1px 25px #dee0e4;
   border-radius: 50px;
   position: relative;
 }
 
 #tablet {
   opacity: 0;
+  position: relative;
+  z-index: 4;
 }
 
 .left {
@@ -421,10 +465,6 @@ a.button.hvr-icon-forward {
   .menu button {
     font-size: .75rem;
   }
-  a.button.hvr-icon-forward{
-    font-size: 14px;
-    width: 80%;
-  }
 }
 
 .learn {
@@ -460,7 +500,7 @@ a.button.hvr-icon-forward {
 
 .bottom-section {
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 8rem;
 }
 
 .bottom-section h2 {
@@ -633,6 +673,14 @@ a.button.hvr-icon-forward {
     padding-right: 1rem;
     padding-top: 6rem;
     padding-left: 2rem;
+    text-align: center;
+  }
+
+  #learn-more.button, #sign-up-today.button {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -678,8 +726,6 @@ a.button.hvr-icon-forward {
 
   }
 }
-
-
 
 /*Arrow Section*/
 .grayscale-arrow-down {
