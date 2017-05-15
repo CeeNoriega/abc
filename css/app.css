@@ -654,6 +654,10 @@ a.button.hvr-icon-forward {
     margin: 0 !important;
   }
 
+  .fee-header img {
+    max-width: 75%;
+  }
+
   .tools {
     text-align: center;
   }
@@ -673,12 +677,29 @@ a.button.hvr-icon-forward {
     margin: auto;
   }
 
+  .tablet-section {
+    margin-top: -5rem;
+  }
+
   .right .header .top,
   .right .header .middle,
   .right .header .bottom {
     margin: auto;
-
   }
+
+  .right h2{
+    font-size: 2rem;
+  }
+
+  #tablet {
+    margin-left: 3rem;
+    padding-top: 2rem;
+  }
+
+  .left img {
+    max-width: 70%;
+  }
+
   .callout.large h1.sub-banner {
     padding-left: 0;
     padding-top: 0;
@@ -689,10 +710,6 @@ a.button.hvr-icon-forward {
 
   .footer-bottom-bar .bottom-copyright {
     text-align: center;
-  }
-
-  .right-section {
-    padding-right: 0;
   }
 
   .bottom-section {
@@ -709,9 +726,9 @@ a.button.hvr-icon-forward {
     /*margin-left: 2rem;*/
   }
   .right-section {
-    padding-right: 1rem;
+    padding-right: 0rem;
     padding-top: 6rem;
-    padding-left: 2rem;
+    padding-left: 0rem;
     text-align: center;
   }
 
