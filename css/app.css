@@ -50,6 +50,7 @@ body {
   max-width: 100%;
 }
 
+
 /*Top Section Medium Screen*/
 
 @media only screen and (max-width: 1496px) {
@@ -606,6 +607,13 @@ a.button.hvr-icon-forward {
 .footer-bottom-bar .bottom-links li {
   padding-right: 2rem;
 }
+
+@media screen and (min-width: 641px) and (max-width: 857px) {
+  .laptop-title-hero h1.groups-1, .laptop-title-hero h1.groups-2 {
+    font-size: 2rem;
+  }
+}
+
 
 /*Small Screens*/
 
