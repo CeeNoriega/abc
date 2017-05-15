@@ -160,9 +160,6 @@ a.button.hvr-icon-forward {
   font-weight: 900;
 }
 
-@media screen and (max-width: 39.9375em) {
-
-}
 
 .large-laptop-header-content {
   display: -webkit-flex;
@@ -372,6 +369,17 @@ a.button.hvr-icon-forward {
 
 #express-section {
   background-color: #f8f9fa
+}
+
+@media only screen and (min-width: 1441px){
+  .angle {
+    background: #fefefe;
+    height: 12rem;
+    position: relative;
+    z-index: 0;
+    -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 20%, 0 100%);
+    clip-path: polygon(0 0, 1600px 0, 1600px 20%, 0 100%);
+  }
 }
 
 .left img {
