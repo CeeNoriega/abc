@@ -608,14 +608,14 @@ a.button.hvr-icon-forward {
   padding-right: 2rem;
 }
 
+
+/*Small Screens*/
+
 @media screen and (min-width: 641px) and (max-width: 857px) {
   .laptop-title-hero h1.groups-1, .laptop-title-hero h1.groups-2 {
     font-size: 2rem;
   }
 }
-
-
-/*Small Screens*/
 
 @media screen and (max-width: 39.9375em) {
 
