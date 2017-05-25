@@ -418,7 +418,7 @@ a.button.hvr-icon-forward {
 
 .right-section {
   padding-right: 10rem;
-  padding-top: 5rem;
+  padding-top: 13rem;
   color: #666666;
   min-width: 50%
   background-color: #f8f9fa;
@@ -439,7 +439,7 @@ a.button.hvr-icon-forward {
   }
 
   .right .header .bottom {
-    width: 90%;
+    width: 85%;
     min-width: 400px;
   }
 }
@@ -625,8 +625,14 @@ a.button.hvr-icon-forward {
   }
 }
 
-@media screen and (max-width: 39.9375em) {
+@media screen and (min-width: 641px) and (max-width: 1029px) {
+  .right-section {
+    padding-top: 6rem;
+  }
+}
 
+
+@media screen and (max-width: 39.9375em) {
   .title-bar .menu-icon {
     margin-left: 1rem;
   }
@@ -781,6 +787,11 @@ a.button.hvr-icon-forward {
     width: 80%;
     background: none;
     padding-bottom: 2rem;
+  }
+
+  .header {
+    /*max-width: 80%;*/
+    margin: auto;
   }
 
   .bottom-section .header h2 {
