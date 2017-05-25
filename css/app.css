@@ -385,7 +385,7 @@ a.button.hvr-icon-forward {
 .left img {
   max-width: 90%;
   max-height: 100%;
-  box-shadow: 1px 1px 25px #dee0e4;
+  box-shadow: 1px 1px 1px #dee0e4;
   border-radius: 50px;
   position: relative;
   z-index: 3;
