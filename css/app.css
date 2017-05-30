@@ -353,13 +353,14 @@ a.button.hvr-icon-forward {
 
 .angle {
   background: #fefefe;
-  height: 12rem;
+  height: 7rem;
   position: relative;
   z-index: 0;
-  background-image: linear-gradient(54deg, #FBB261, #FBB261 8%, transparent 8%, transparent 27%);
-  background-image: -webkit-linear-gradient(54deg, #FBB261, #FBB261 11%, transparent 11%, transparent 27%);
-  -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 20%, 0 100%);
-  clip-path: polygon(0 0, 1600px 0, 1600px 20%, 0 100%);
+	border-top: 55px solid transparent;
+	border-left: 246px solid #FBB261;
+	border-bottom: 50px solid transparent;
+  -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 0%, 0 100%);
+  clip-path: polygon(0 0, 1600px 0, 1600px 0%, 0 100%);
 }
 
 .express{
@@ -730,6 +731,11 @@ a.button.hvr-icon-forward {
     font-size: .75rem;
   }
 
+  .angle {
+      background: none;
+      border: none;
+    }
+
   .footer-bottom-bar .bottom-copyright {
     text-align: center;
   }
@@ -790,7 +796,6 @@ a.button.hvr-icon-forward {
   }
 
   .header {
-    /*max-width: 80%;*/
     margin: auto;
   }
 
