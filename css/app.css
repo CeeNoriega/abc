@@ -193,6 +193,7 @@ a.button.hvr-icon-forward {
 }
 
 .laptop-title-hero h1.number{
+  font-family: 'Raleway', sans-serif !important;
   border: 1px solid #9BCB58;
   margin-top: 1rem;
 }
@@ -272,6 +273,7 @@ a.button.hvr-icon-forward {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
+  line-height: 1.2;
 }
 
 .bold-tools {
@@ -426,6 +428,10 @@ a.button.hvr-icon-forward {
 
 }
 
+.header {
+  margin-bottom: 2rem;
+}
+
 .right .header .top,
 .right .header .middle,
 .right .header .bottom {
@@ -452,6 +458,10 @@ a.button.hvr-icon-forward {
   font-family: 'Raleway', sans-serif;
   font-weight: 900;
   text-transform: uppercase;
+}
+
+a#learn-more {
+  width: 60%;
 }
 
 /*Bottom Medium Screen*/
@@ -492,7 +502,7 @@ a.button.hvr-icon-forward {
 
 .bottom-section h2 {
   color: #ff0066;
-  font-weight: bold;
+  font-weight: bold !important;
   text-transform: uppercase;
 }
 
@@ -500,6 +510,7 @@ a.button.hvr-icon-forward {
   background: linear-gradient(to bottom, transparent 50%, #EF8AB3 20%);
   width: 50%;
   margin: auto;
+  margin-bottom: 1.5rem;
 }
 
 .bottom-section .header h2.top, .bottom-section .header h2.bottom {
@@ -663,6 +674,8 @@ a.button.hvr-icon-forward {
     text-align: center;
     padding-left: 1rem;
     padding-right: 1rem;
+    width: 100%;
+    margin: auto;
   }
 
   .callout.large h1 {
@@ -704,10 +717,25 @@ a.button.hvr-icon-forward {
     margin-top: -5rem;
   }
 
+  .express-text {
+    max-width: 85%;
+    margin: auto;
+    padding-top: 1rem;
+  }
+
   .right .header .top,
   .right .header .middle,
   .right .header .bottom {
     margin: auto;
+  }
+
+  .top, .middle {
+    max-width: 83%;
+  }
+
+  .bottom {
+    max-width: 96%;
+    margin-bottom: 1rem;
   }
 
   .right h2{
@@ -768,9 +796,10 @@ a.button.hvr-icon-forward {
 
   #set-up-today.button {
     display: block;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    width: 90%;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
   }
   .bottom-section {
     margin-left: 0;
@@ -792,7 +821,6 @@ a.button.hvr-icon-forward {
   .bottom-section .header {
     width: 80%;
     background: none;
-    padding-bottom: 2rem;
   }
 
   .header {
