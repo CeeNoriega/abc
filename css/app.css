@@ -1,3 +1,7 @@
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -57,7 +61,7 @@ body {
   .top-section {
     background: url('../images/hero-photo.png') no-repeat center;
     background-size: cover;
-    height: 45rem;
+    height: 41rem;
     color: #FFFFFF;
     -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 80%, 0 100%);
     clip-path: polygon(0 0, 1600px 0, 1600px 80%, 0 100%);
@@ -446,7 +450,7 @@ a.button.hvr-icon-forward {
   }
 
   .right .header .bottom {
-    width: 85%;
+    width: 96%;
     min-width: 400px;
   }
 }
@@ -484,6 +488,12 @@ a#learn-more {
     }
   }
 
+@media only screen and (min-width: 911px) and (max-width: 1020px){
+  .right .header .bottom {
+    max-width: 60%;
+  }
+}
+
 /*Bottom Large Screens*/
 @media only screen and (min-width: 1441px){
   .bottom-pink {
@@ -508,13 +518,14 @@ a#learn-more {
 
 .bottom-section .header {
   background: linear-gradient(to bottom, transparent 50%, #EF8AB3 20%);
-  width: 50%;
+  width: 45%;
   margin: auto;
   margin-bottom: 1.5rem;
 }
 
 .bottom-section .header h2.top, .bottom-section .header h2.bottom {
   display: inline-block;
+  margin-bottom: 0;
 }
 
 .bottom-section .text {
@@ -655,8 +666,10 @@ a#learn-more {
   }
   .large-laptop-header-hero {
     margin: auto;
-    background-color: #f8f9fa;
+    /*background-color: #f8f9fa;*/
     min-height: 22rem;
+    z-index: 3;
+    margin-top: -10rem;
   }
   .laptop-title h1.number{
     border: none;
@@ -730,11 +743,11 @@ a#learn-more {
   }
 
   .top, .middle {
-    max-width: 83%;
+    max-width: 81%;
   }
 
   .bottom {
-    max-width: 96%;
+    max-width: 94%;
     margin-bottom: 1rem;
   }
 
