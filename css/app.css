@@ -364,7 +364,7 @@ a.button.hvr-icon-forward {
   z-index: 0;
 	border-top: 55px solid transparent;
 	border-left: 246px solid #FBB261;
-	border-bottom: 50px solid transparent;
+	border-bottom: 50px solid #f8f9fa;
   -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 0%, 0 100%);
   clip-path: polygon(0 0, 1600px 0, 1600px 0%, 0 100%);
 }
