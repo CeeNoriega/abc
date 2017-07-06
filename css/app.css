@@ -278,13 +278,13 @@ a.button.hvr-icon-forward {
 
 .tools h2 {
   font-family: 'Raleway', sans-serif;
-  font-weight: bold;
+  font-weight: 900;
   text-transform: uppercase;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 .bold-tools {
-  font-weight: bold;
+  font-weight: 500;
   margin: 0;
 }
 
@@ -405,7 +405,7 @@ a.button.hvr-icon-forward {
   background-color: #f8f9fa;
   position: relative;
   z-index: 4;
-  margin-top: -9rem;
+  margin-top: -6rem;
 }
 
 #tablet {
@@ -414,7 +414,7 @@ a.button.hvr-icon-forward {
 
 @media only screen and (min-width: 40.063em) {
   .left {
-    padding-left: 7rem;
+    padding-left: 6rem;
   }
 }
 
@@ -428,7 +428,7 @@ a.button.hvr-icon-forward {
 
 .right-section {
   padding-right: 10rem;
-  padding-top: 13rem;
+  padding-top: 8.5rem;
   color: #666666;
   min-width: 50%
   background-color: #f8f9fa;
