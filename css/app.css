@@ -226,6 +226,10 @@ a.button.hvr-icon-forward {
   margin-bottom: 2rem;
 }
 
+#no-contracts, #small-no-contracts {
+  opacity: 0;
+}
+
 .fee-header p {
   color: #9BCB58;
   font-size: 30px;
