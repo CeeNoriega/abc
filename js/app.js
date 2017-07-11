@@ -25,19 +25,33 @@ $(document).ready(function() {
 
 // Google Analytics //
 $('#learn-more').click(function(e) {
-    var label = $(this).closest('section').attr('id').toString();
-    ga('send', 'event', 'Click', 'Click', label); // Google Analytics
+  var label = $(this).attr('id');
+  var action = $(this).attr('data-ga-label');
+  ga('send', 'event', 'Click', action, label);
 });
 
+$('#set-up-today').click(function(e) {
+  var label = $(this).attr('id');
+  var action = $(this).attr('data-ga-label');
+  ga('send', 'event', 'Click', action, label);
+});
+
+$('#sign-up-today').click(function(e) {
+  var label = $(this).attr('id');
+  var action = $(this).attr('data-ga-label');
+  ga('send', 'event', 'Click', action, label);
+});
+
+
 function scrollAnalyticsHandler(direction, label) {
-if (direction === 'down') {
-    ga('send', 'event', 'Section', 'Hit scrolling downwards', label, 1);
-} else {
+  if (direction === 'down') {
+      ga('send', 'event', 'Section', 'Hit scrolling downwards', label, 1);
+  } else {
     ga('send', 'event', 'Section', 'Hit scrolling upwards', label, 1);
-}
+  }
 }
 
-var sectionWaypoints = $( "section" ).not("#cover").waypoint({
+var sectionWaypoints = $("section").not("#cover").waypoint({
   handler: function(direction) {
       var label = this.element.id;
       scrollAnalyticsHandler(direction, label);
