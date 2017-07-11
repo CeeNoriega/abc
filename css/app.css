@@ -534,6 +534,12 @@ a#learn-more {
   margin-bottom: 1.5rem;
 }
 
+@media screen and (min-width: 641px) and (max-width: 1226px) {
+    .bottom-section .header {
+      width: 74%;
+  }
+}
+
 .bottom-section .header h2.top, .bottom-section .header h2.bottom {
   display: inline-block;
   margin-bottom: 0;
