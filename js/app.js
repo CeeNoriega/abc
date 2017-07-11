@@ -27,18 +27,35 @@ $(document).ready(function() {
 $('#learn-more').click(function(e) {
   var label = $(this).attr('id');
   var action = $(this).attr('data-ga-label');
+  console.log(label + ' was clicked')
   // ga('send', 'event', 'Click', action, label);
 });
 
 $('#set-up-today').click(function(e) {
   var label = $(this).attr('id');
   var action = $(this).attr('data-ga-label');
+  console.log(label + ' was clicked')
   // ga('send', 'event', 'Click', action, label);
 });
 
 $('#sign-up-today').click(function(e) {
   var label = $(this).attr('id');
   var action = $(this).attr('data-ga-label');
+  console.log(label + ' was clicked')
+  // ga('send', 'event', 'Click', action, label);
+});
+
+$('#sign-up').click(function(e) {
+  var label = $(this).attr('id');
+  var action = $(this).attr('data-ga-label');
+  console.log(label + ' was clicked')
+  // ga('send', 'event', 'Click', action, label);
+});
+
+$('#log-in').click(function(e) {
+  var label = $(this).attr('id');
+  var action = $(this).attr('data-ga-label');
+  console.log(label + ' was clicked')
   // ga('send', 'event', 'Click', action, label);
 });
 
