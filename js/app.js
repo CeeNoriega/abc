@@ -56,4 +56,4 @@ $('#sign-up-today').click(function(e) {
 //       var label = this.element.id;
 //       scrollAnalyticsHandler(direction, label);
 //   }
-});
+// });
