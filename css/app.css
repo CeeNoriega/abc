@@ -674,7 +674,11 @@ a#learn-more {
 
 @media screen and (max-width: 39.9375em) {
   .title-bar .menu-icon {
-    margin-left: 1rem;
+    margin-left: 2rem;
+  }
+
+  .top-bar-title {
+    padding-top: 1rem;
   }
 
   .large-laptop-header-content {
