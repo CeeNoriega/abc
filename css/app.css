@@ -678,6 +678,10 @@ a#learn-more {
     margin-right: 0;
   }
 
+  .title-bar {
+    padding: 0;
+  }
+
   .top-bar-title {
     padding-top: 1rem;
   }
