@@ -2,7 +2,7 @@ $(document).foundation()
 
 // Animation for Images //
 $(document).ready(function() {
-    var siteTotalDiv = $("#sitetotal").offset().top;
+    var siteTotalDiv = $("#firecontracts").offset().top;
     var recurringDiv = $("#recurring").offset().top;
     $(window).scroll(function() {
       if($(window).width() < 640) {
