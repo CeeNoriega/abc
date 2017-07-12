@@ -675,6 +675,7 @@ a#learn-more {
 @media screen and (max-width: 39.9375em) {
   .title-bar .menu-icon {
     margin-left: 2rem;
+    margin-right: 0;
   }
 
   .top-bar-title {
